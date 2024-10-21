@@ -1,0 +1,22 @@
+{
+  "name": "sdi-project-1-scaffold",
+  "version": "1.0.0",
+  "description": "For Project 1 repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjtaberski/SDI-Project-1-Scaffold.git"
+  },
+  "author": "Connor Taberski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjtaberski/SDI-Project-1-Scaffold/issues"
+  },
+  "homepage": "https://github.com/cjtaberski/SDI-Project-1-Scaffold#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
