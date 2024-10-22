@@ -8,20 +8,17 @@
 </head>
 <body>
     <header><strong>Plan Your Visit to the Met!</strong></header>
-    <h1>Exhibits</h1>
+    <h1>Exhibits<button type="submit" id="searchButton">Search</button><input type="text" id="itemSearch" value="" placeholder="Search by Item ID"><p><em>Click an item to add it to your visiting plan</em></p><a href="index1.html" id="exhibitLink">Go to Visiting Plan</a></h1>
     <div id="exhibitItems" class="flex-container">
-        <!-- <div id="exhibitItem">1</div>
-        <div id="exhibitItem">2</div>
+        <!-- <div class="exhibitItem" display="hidden">1</div> 
+         <!-- <div id="exhibitItem">2</div>
         <div id="exhibitItem">3</div>
-        <div id="exhibitItem">4</div> -->
+        <div id="exhibitItem">4</div> -->     
     </div>
-    <h1>Visiting Plan</h1>
-    <div id="visitItems" class="flex-container">
-        <div id="visitItem">1</div>
-        <div id="visitItem">2</div>
-        <div id="visitItem">3</div>
-        <div id="visitItem">4</div>
-    </div>
+    <h1>Visiting Plan: <span class="counter" id="visitCounter">0</span><p><em>Click an item to remove it from your visiting plan</em></p><p><em>Click "Visited" to add an item to your visited list</em></p></h1>
+    <div id="visitItems" class="flex-container"></div>
+    <h1>Exhibits Visited: <span class="counter" id="visitedCounter">0</span><p><em>Click an item to remove it from your visited exhibits</em></p></h1>
+    <div id="visitedItems" class="flexcontainer"></div>
     <script src="./index.js"></script>
 </body>
 </html>

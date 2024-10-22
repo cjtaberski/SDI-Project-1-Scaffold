@@ -1,7 +1,7 @@
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: left;
     height: auto;
     background-color: lightgrey;
     border-radius: 10px;
@@ -12,8 +12,18 @@ h1 {
     font-family: Arial, Verdana, Helvetica;
     border-radius: 10px;
 }
+
+#itemSearch {
+    float: right;
+    align-items: end;
+}
+
+#searchButton {
+    float: right;
+    align-items: end;
+}
 .exhibitItem {
-    flex: 1 1 200px;
+    position: relative;
     height: 250px;
     width: 200px;
     margin: 10px;
@@ -23,16 +33,30 @@ h1 {
     background-color: red;
     border-radius: 5px;
     align-items: flex-start;
-    text-align: center
+    text-align: center;
 }
 
 .exhibitItem:hover {
     transform: scale(1.1);
 }
 
-#visitItem {
-    flex: 1 1 200px;
-    height: 200px;
+.exhibitItem:hover #description {
+    visibility: visible;
+}
+
+.exhibitItem:hover img {
+    display: none;
+}
+
+.counter {
+    text-align: right;
+    align-items: start;
+}
+
+.visitItem {
+    position: relative;
+    height: 250px;
+    width: 200px;
     margin: 10px;
     border: 1px;
     padding: 15px;
@@ -40,10 +64,51 @@ h1 {
     background-color: red;
     border-radius: 5px;
     align-items: flex-start;
+    text-align: center;
+}
+
+.visitedItem {
+    position: relative;
+    height: 250px;
+    width: 200px;
+    margin: 10px;
+    border: 1px;
+    padding: 15px;
+    font-family: Arial, Verdana, Helvetica;
+    background-color: red;
+    border-radius: 5px;
+    align-items: flex-start;
+    text-align: center;
 }
 
 .visitItem:hover {
-    transform: scale(1.2) slow;
+    transform: scale(1.1);
+}
+
+.visitItem:hover #description {
+    visibility: visible;
+    transition-delay: 0.2s ease-in-out;
+}
+
+.visitItem:hover img {
+    display: none;
+    transition-delay: 0.2s ease-in-out;
+}
+
+#description {
+    visibility: hidden;
+}
+
+#description .ul .li {
+    text-align: left;
+}
+
+.visitItem .button {
+    display: hidden;
+}
+
+.visitItem:hover .button {
+    visibility: visible;
 }
 
 header {
@@ -54,10 +119,20 @@ header {
 }
 
 img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    align-items: end;
+    justify-content: center;
 }
 
 body {
     background-color: black;
+}
+
+p {
+    font-size: medium;
+}
+
+#link {
+    font-size:medium;
 }
